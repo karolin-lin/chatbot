@@ -1,0 +1,12 @@
+timestamp_utc,session_id,participant,condition,event,role,message
+2026-04-05T17:31:42.757314,9dc7d162-5724-4b28-9da0-cc5565ca8f77,P001,AI,session_start,,
+2026-04-05T17:31:42.759734,0e22c423-ab27-4c36-85d9-10f8c066b19d,P001,AI,session_start,,
+2026-04-05T17:31:52.427191,0e22c423-ab27-4c36-85d9-10f8c066b19d,P001,AI,message,user,hi
+2026-04-05T17:31:55.103022,0e22c423-ab27-4c36-85d9-10f8c066b19d,P001,AI,message,assistant,"Hello! How are you feeling today? If you’re feeling any stress, I'm here to help."
+2026-04-05T17:32:11.319005,0e22c423-ab27-4c36-85d9-10f8c066b19d,P001,AI,message,user,wowww u loook amazing
+2026-04-05T17:32:13.775338,0e22c423-ab27-4c36-85d9-10f8c066b19d,P001,AI,message,assistant,Thank you! That’s so kind of you to say. How can I support you today?
+2026-04-05T17:32:24.827543,0e22c423-ab27-4c36-85d9-10f8c066b19d,P001,AI,message,user,你好厲害喔
+2026-04-05T17:32:27.218722,0e22c423-ab27-4c36-85d9-10f8c066b19d,P001,AI,message,assistant,謝謝！有任何我可以幫助你的地方嗎？如果你感到壓力，我在這裡支持你。
+2026-04-05T17:33:12.343057,0e22c423-ab27-4c36-85d9-10f8c066b19d,P001,AI,message,user,ok
+2026-04-05T17:33:14.757920,0e22c423-ab27-4c36-85d9-10f8c066b19d,P001,AI,message,assistant,好的！如果你有任何想要分享的事情或需要幫助的地方，隨時告訴我哦。
+2026-04-05T17:36:42.941317,0e22c423-ab27-4c36-85d9-10f8c066b19d,P001,AI,session_end,,

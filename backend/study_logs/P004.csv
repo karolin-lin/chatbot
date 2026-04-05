@@ -1,0 +1,16 @@
+timestamp_utc,session_id,participant,condition,event,role,message
+2026-04-05T16:11:42.060359,21d7040d-ff32-465e-b2d1-e3bc2849b78d,P004,AI,session_start,,
+2026-04-05T16:11:42.062396,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,session_start,,
+2026-04-05T16:11:46.941885,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,message,user,hey
+2026-04-05T16:11:47.652985,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,message,assistant,Hey there! How are you feeling today?
+2026-04-05T16:11:56.584164,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,message,user,nothing special
+2026-04-05T16:11:58.540612,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,message,assistant,"That’s okay! Sometimes, it's just a normal day. If there’s anything on your mind or if you want to talk about something, I’m here for you!"
+2026-04-05T16:12:34.473240,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,message,user,u r so sweet
+2026-04-05T16:12:35.976790,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,message,assistant,"Thank you! I’m here to help and support you. If you need anything or want to chat, just let me know!"
+2026-04-05T16:13:09.747053,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,message,user,could u ask me a question?
+2026-04-05T16:13:11.193738,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,message,assistant,Of course! What’s one thing you’re grateful for today?
+2026-04-05T16:13:26.551060,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,message,user,wowwwww that's a profound one
+2026-04-05T16:13:28.238339,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,message,assistant,I’m glad you think so! It can be a nice way to reflect. Take your time—what comes to mind?
+2026-04-05T16:16:42.119251,9b039bd5-cbdb-4881-8145-43fc9ec458cb,P004,AI,session_end,,
+2026-04-05T16:16:46.928465,754fdc74-d2d9-4b43-9777-e577bbb7eee0,P004,AI,session_start,,
+2026-04-05T16:16:47.508534,c1bf24ff-14cc-4c03-9d10-c4adcbb55291,P004,AI,session_start,,

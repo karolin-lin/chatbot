@@ -1,0 +1,35 @@
+timestamp_utc,session_id,participant,condition,event,role,message
+2026-03-25T18:16:44.103825,278ba311-c83c-4716-b65d-a39fc4f3efbf,P001,AI,session_start,,
+2026-03-25T18:16:44.105259,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,session_start,,
+2026-03-25T18:16:47.737117,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,user,hi
+2026-03-25T18:16:52.708277,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,assistant,Hello! How are you feeling today?
+2026-03-25T18:17:43.202540,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,user,good
+2026-03-25T18:17:44.792133,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,assistant,"I'm glad to hear that! If you ever feel like sharing or need support, I'm here for you."
+2026-03-25T18:17:57.747818,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,user,i felt bad today
+2026-03-25T18:17:59.404314,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,assistant,I'm sorry to hear that. It’s okay to have tough days. Would you like to talk about what’s been bothering you?
+2026-03-25T18:18:34.843548,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,user,who is the champion of 2026 WBC
+2026-03-25T18:18:37.251972,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,assistant,"As of October 2023, the champion of the 2026 World Baseball Classic (WBC) has not yet been determined, as the tournament is scheduled for March 2026. If you're looking for updates closer to the event, I can help with that!"
+2026-03-25T18:18:47.804815,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,user,ok thank you
+2026-03-25T18:18:49.626538,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,assistant,"You're welcome! If you have any more questions or need someone to chat with, just let me know."
+2026-03-25T18:19:42.617866,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,user,我家教學生很皮很煩
+2026-03-25T18:19:45.632474,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,assistant,我理解教學生可能會有挑戰，特別是當他們顯得調皮或難以應付時。你有試過一些方法來引導他們嗎？也許我可以提供一些建議或支持！
+2026-03-25T18:19:57.148894,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,user,有但他一直講不聽超煩
+2026-03-25T18:19:58.921118,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,assistant,聽起來真的很挫折！有時候孩子們可能需要不同的方式來引起注意或者理解。也許可以試著變換一下教學方式或設計一些有趣的活動來吸引他的興趣？如果需要更多具體的建議，隨時告訴我！
+2026-03-25T18:20:12.202472,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,user,他超沒救
+2026-03-25T18:20:13.993655,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,assistant,我可以理解這種感覺讓人很沮喪。遇到這樣的情況真的不容易。試著保持耐心，也許給自己一些空間，讓心情調整一下。如果有需要，我隨時在這裡聽你分享！
+2026-03-25T18:20:47.383513,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,user,我最近在搶票然後幹都被黃牛買走==
+2026-03-25T18:20:50.177689,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,assistant,搶票真的很讓人沮喪，尤其是當黃牛出現時！這種情況會讓人感到無力。你有考慮使用一些技巧或平台來提高成功率嗎？如果需要，我可以提供一些建議！
+2026-03-25T18:21:11.980447,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,user,為什麼都不能把這些人抓走
+2026-03-25T18:21:14.160241,f42ad320-4af1-46f3-a6e5-40ce47269d7e,P001,AI,message,assistant,這確實是個讓人頭疼的問題。雖然有些地方正在加強打擊黃牛的措施，但執法和監管上往往很難完全解決這個問題。希望未來能有更有效的解決方案，讓每個人都能公平地獲得票務！如果你有其他的想法或需要支持的地方，隨時說哦！
+2026-04-05T16:04:04.335751,3bd53e61-2648-40ea-afe7-4696e5edcb83,P002,AI,session_start,,
+2026-04-05T16:04:04.338053,f76126f9-ee04-46c8-b3e8-31599abf4c9b,P002,AI,session_start,,
+2026-04-05T16:04:08.682460,f76126f9-ee04-46c8-b3e8-31599abf4c9b,P002,AI,message,user,hi
+2026-04-05T16:04:10.985848,f76126f9-ee04-46c8-b3e8-31599abf4c9b,P002,AI,message,assistant,Hello! How are you feeling today? I'm here to help.
+2026-04-05T16:04:20.685918,f76126f9-ee04-46c8-b3e8-31599abf4c9b,P002,AI,message,user,i have a really bad day
+2026-04-05T16:04:22.624031,f76126f9-ee04-46c8-b3e8-31599abf4c9b,P002,AI,message,assistant,I’m sorry to hear that. It’s okay to have tough days. Would you like to talk about what’s been bothering you?
+2026-04-05T16:05:00.383058,a13c3f20-4548-4f84-8fa9-dc99da1b3bfa,P003,AI,session_start,,
+2026-04-05T16:05:00.385727,0638945b-2350-4611-8ae0-cb84d67059ee,P003,AI,session_start,,
+2026-04-05T16:05:08.864463,0638945b-2350-4611-8ae0-cb84d67059ee,P003,AI,message,user,hiiiiii
+2026-04-05T16:05:10.287100,0638945b-2350-4611-8ae0-cb84d67059ee,P003,AI,message,assistant,Hello! How are you feeling today?
+2026-04-05T16:05:18.615494,0638945b-2350-4611-8ae0-cb84d67059ee,P003,AI,message,user,i felt baaaaaaad
+2026-04-05T16:05:19.689029,0638945b-2350-4611-8ae0-cb84d67059ee,P003,AI,message,assistant,I’m sorry to hear that. It’s okay to have tough days. Would you like to talk about what’s bothering you?

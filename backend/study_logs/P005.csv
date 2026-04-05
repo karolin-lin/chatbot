@@ -1,0 +1,11 @@
+timestamp_utc,session_id,participant,condition,event,role,message
+2026-04-05T16:12:13.373407,383dfec2-765d-4252-878a-de9df3752ac8,P005,AI,session_start,,
+2026-04-05T16:12:13.376434,7e79967f-9104-4b18-80d5-6a8772d93de8,P005,AI,session_start,,
+2026-04-05T16:12:19.125148,7e79967f-9104-4b18-80d5-6a8772d93de8,P005,AI,message,user,hello
+2026-04-05T16:12:19.814369,7e79967f-9104-4b18-80d5-6a8772d93de8,P005,AI,message,assistant,Hello! How are you feeling today?
+2026-04-05T16:12:25.697470,7e79967f-9104-4b18-80d5-6a8772d93de8,P005,AI,message,user,no feeling
+2026-04-05T16:12:26.728118,7e79967f-9104-4b18-80d5-6a8772d93de8,P005,AI,message,assistant,"That's okay! Sometimes we can feel a bit numb. If you'd like to talk about what's on your mind or anything else, I’m here to listen."
+2026-04-05T16:12:49.792040,7e79967f-9104-4b18-80d5-6a8772d93de8,P005,AI,message,user,i have so many things on my plate
+2026-04-05T16:12:51.071329,7e79967f-9104-4b18-80d5-6a8772d93de8,P005,AI,message,assistant,That sounds really overwhelming. It's completely normal to feel that way when there's a lot going on. Is there one particular thing that’s weighing on you the most? We can tackle it together.
+2026-04-05T16:16:46.970147,81ec5a43-e98e-4ff5-b641-562b1651429f,P005,AI,session_start,,
+2026-04-05T16:16:47.510824,b374258f-8d0d-4dae-8d6e-e152d409b0b4,P005,AI,session_start,,
