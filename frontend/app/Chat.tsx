@@ -16,7 +16,7 @@ type Props = {
   condition: Condition;
 };
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://chatbot-i1pf.onrender.com/";
 const SESSION_SECONDS = 5 * 60;
 
 export default function Chat({ participant, condition }: Props) {
