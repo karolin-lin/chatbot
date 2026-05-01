@@ -1,12 +1,5 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"], # 或是你 Vercel 的正式網址
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 from pydantic import BaseModel
 import csv
 import hashlib
@@ -18,18 +11,17 @@ from uuid import uuid4
 from dotenv import load_dotenv
 from openai import OpenAI
 
+# 1. 先建立 FastAPI 實例 (宣告 app)
 app = FastAPI()
 
 # Load environment variables from .env (if present)
 load_dotenv()
 
-# ── CORS ──────────────────────────────────────────────────────────────────────
+# 2. 再加入 CORS 中介軟體設定 (合併成一個就好)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-    ],
+    allow_origins=["*"], # 這裡允許所有來源連線，適合目前部署測試
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
