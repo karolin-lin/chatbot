@@ -1,60 +1,39 @@
-
 @import "tailwindcss";
-@plugin "tailwind-scrollbar";
+
+@theme {
+  /* 定義主要 Vibe 色彩 */
+  --color-primary: #fffaf0; /* 米色 */
+  --color-primary-light: #fce4ec; /* 粉色 */
+  --color-primary-lighter: #e3f2fd; /* 藍色 */
+  --color-text-dark: #2c2e35;
+  --color-white: #ffffff;
+}
 
 :root {
-  --background: #F8F9FB; /* 圖片中的淺灰藍背景 */
-  --foreground: #171717;
-  /* 實作圖片中的軟陰影 */
-  --shadow-soft: 0 10px 30px rgba(79, 127, 255, 0.1);
-  --shadow-inner: inset 0 2px 4px rgba(0,0,0,0.05);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  /* 擴展 Tailwind 的陰影 */
-  --shadow-soft: var(--shadow-soft);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* 設定 Inter 為標準無襯線字體 */
+  --font-sans: 'Inter', -apple-system, system-ui, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased; /* 優化字體渲染 */
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-sans);
+  color: #2c2e35;
+  /* 實現在 image_0 頂部看到的柔和擴散漸變背景 */
+  background: linear-gradient(135deg, #fffaf0 0%, #fce4ec 30%, #e3f2fd 70%, #fffaf0 100%);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
 }
 
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 實現在 image_0 中所有卡片和輸入框使用的毛玻璃效果 */
+.glass-card {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* 為了 Safari 瀏覽器 */
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}

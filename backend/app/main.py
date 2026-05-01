@@ -9,7 +9,7 @@ from datetime import datetime
 from uuid import uuid4
 
 from dotenv import load_dotenv
-from openai import OpenAI
+import google.generativeai as genai
 
 # 1. 先建立 FastAPI 實例 (宣告 app)
 app = FastAPI()
@@ -26,14 +26,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-def _get_openai_client() -> OpenAI:
-    api_key = os.getenv("OPENAI_API_KEY")
+def _get_gemini_model() -> genai.GenerativeModel:
+    api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise HTTPException(
             status_code=500,
-            detail="OPENAI_API_KEY is not set. Copy backend/.env.example to backend/.env and fill it.",
+            detail="GEMINI_API_KEY is not set. Copy backend/.env.example to backend/.env and fill it.",
         )
-    return OpenAI(api_key=api_key)
+    genai.configure(api_key=api_key)
+    model_name = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+    return genai.GenerativeModel(model_name)
 
 # ── System prompts per condition ──────────────────────────────────────────────
 SYSTEM_PROMPTS = {
@@ -99,18 +101,21 @@ async def chat(req: ChatRequest):
         message=message_text,
     )
 
-    # Build chat history for the model (system + last N turns)
-    history = session["messages"][-40:]
-    client = _get_openai_client()
-    response = client.chat.completions.create(
-        model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
-        messages=[
-            {"role": "system", "content": system_prompt},
-            *history,
-        ],
-    )
+    # Build chat history for Gemini (last N turns, excluding current message)
+    raw_history = session["messages"][-40:-1]  # exclude the just-appended user message
+    gemini_history = []
+    for msg in raw_history:
+        gemini_role = "user" if msg["role"] == "user" else "model"
+        gemini_history.append({"role": gemini_role, "parts": [msg["content"]]})
 
-    reply = (response.choices[0].message.content or "").strip()
+    model = _get_gemini_model()
+    chat_session = model.start_chat(history=gemini_history)
+
+    # Prepend system prompt to the current user message
+    full_message = f"{system_prompt}\n\n{message_text}"
+    response = chat_session.send_message(full_message)
+
+    reply = (response.text or "").strip()
 
     session["messages"].append({"role": "assistant", "content": reply})
     _write_log_row(
