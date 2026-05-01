@@ -34,7 +34,7 @@ def _get_gemini_model() -> genai.GenerativeModel:
             detail="GEMINI_API_KEY is not set. Copy backend/.env.example to backend/.env and fill it.",
         )
     genai.configure(api_key=api_key)
-    model_name = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+    model_name = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
     return genai.GenerativeModel(model_name)
 
 # ── System prompts per condition ──────────────────────────────────────────────
